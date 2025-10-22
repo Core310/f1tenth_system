@@ -108,7 +108,7 @@ def generate_launch_description():
         executable='ackermann_mux',
         name='ackermann_mux',
         parameters=[LaunchConfiguration('mux_config')],
-        remappings=[('ackermann_cmd_out', 'ackermann_drive')]
+        remappings=[('ackermann_cmd_out', 'ackermann_cmd')]
     )
     # We already have a publisher, so no need to use this one
     # static_tf_node = Node(
